@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+<section>
+
+    <!-- strip navbar -->
+    <div class="strip-header-nav">
+        
+        <div class="strip-logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="strip-toggel-menu">
+            <i class="fa fa-align-justify"></i>
+        </div>
+    
+        <div class="strip-social-icon">
+            <div class="strip-lang">
+                <span>
+                    <i class="fas fa-globe"></i>
+                </span>
+            </div>
+            
+            <div class="strip-share">
+                <span>
+                    <i class="fas fa-share-alt"></i>
+                </span>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="nav-tab-menu">
+        <div class="nav-item">
+            <ul>
+                <li id="now-playing" class="item1"><a class="nav-category" href="#">Now playing</a></li>
+                <li id="popluar" class="item2"><a class="nav-category" href="#">Popular</a></li>
+                <li id="top-rated" class="item3"><a class="nav-category" href="#">Top Rated</a></li>
+        
+                <li id="trending" class="item5"><a class="nav-category" href="#">Trending</a></li>
+                <li id="up-coming" class="item6"><a class="nav-category" href="#">Upcoming</a></li>
+                <li id="contact" class="item6"><a class="nav-category" href="#contact-us">Contact Us</a></li>
+    
+        
+            </ul>
+        </div>
+        <div class="nav-social-item">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-globe"></i></a>
+            <div class="pt-3">
+                <span>Copyright Â© 2022 All Rights Reserved.</span>
+            </div>
+            
+        </div>
+    </div>
+    
+        
+    
+    
+    </section>
+
+
+    <section class="search d-flex justify-content-around my-5">
+       
+        <div class="w-25">
+      <input id="searchByWord" type="text" class="form-control  bg-transparent text-white  w-100" placeholder="Get Movies By Word...." />
+    </div>
+    <div class="w-25">
+      <input id="searchByMovie" type="text" class="form-control bg-transparent text-white  w-100" placeholder="Search..." />
+    </div>
+    </section>
+
+    <section class="movies my-5">
+      <div class="container">
+        <div class="row gy-5" id="movieBody">
+
+        </div>
+        </div>
+    </section>
+
+
+    <section id="contact-us" class="contact">
+<div class="container">
+    <div class="header my-5 text-white">
+        <h2>Contact US ...</h2>
+    </div>
+    <div class="row">
+        
+        <div class="col-md-6">
+            <div class="mb-3 ">
+
+                <input type="text" class="form-control bg-transparent text-white" id="usernameInput" placeholder="Enter your name">
+                <div id="usernameAlert" class="d-none alert-danger">include at least 3 letters starting with capital, second name is optional</div>
+            </div>
+            <div class="mb-3 ">
+
+                <input type="email" class="form-control bg-transparent text-white" id="userEmailInput" placeholder="Enter your email">
+                <div id="userEmailAlert" class="d-none alert-danger">name@example.com</div>
+
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control bg-transparent text-white mb-3" id="userPasswordInput" placeholder="Enter your password">
+                <div id="userPasswordAlert" class="d-none alert-danger m-0">you must strenth your password, from 5 to 15 characters</div>
+
+            </div>
+            
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3 ">
+
+                <input type="number" class="form-control bg-transparent text-white" id="phoneInput" placeholder="Enter your phone">
+                <div id="phoneAlert" class="d-none alert-danger">include 11 number [010,011,012,015]</div>
+            </div>
+            <div class="mb-3 ">
+
+                <input type="number" class="form-control bg-transparent text-white" id="ageInput" placeholder="Enter your Age">
+                <div id="ageAlert" class="d-none alert-danger">Age Above 10 years old</div>
+
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control bg-transparent text-white mb-3" id="userRePasswordInput" placeholder="Enter your Repassword">
+                <div id="userRePasswordAlert" class="d-none alert-danger m-0">you must strenth your password, from 5 to 15 characters</div>
+
+            </div>
+            <div class="alert-success d-none" id="confirmMsg">Success</div>
+            </div>
+            <div class="submit w-50 m-auto mt-5 text-center">
+                <button id="Submit" type="submit" class="btn btn-outline-success mb-5">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
